@@ -1,0 +1,584 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a {
+    position: relative;
+    width: 520px;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotation 5s infinite;
+}
+
+.a1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    background-color: black;
+    border-radius: 100%;
+    animation: color 2s infinite;
+}
+
+.o {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 470px;
+    height: 470px;
+    /* border: 2px solid black; */
+    border-radius: 100%;
+}
+
+.a2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+
+}
+
+.img {
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: auto;
+}
+
+.b {
+    position: absolute;
+    text-align: center;
+    height: 21.6px;
+    width: 107.1px;
+    animation: color2 5s infinite;
+}
+
+.b:hover {
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.b1 {
+    position: absolute;
+    top: 109px;
+    right: 410px;
+}
+
+.b2 {
+    position: absolute;
+    top: 250px;
+    right: 443px;
+}
+
+.b3 {
+    position: absolute;
+    top: 390px;
+    right: 410px;
+}
+
+.b4 {
+    position: absolute;
+    top: 109px;
+    right: 3px;
+}
+
+.b5 {
+    position: absolute;
+    top: 250px;
+    right: -30px;
+}
+
+.b6 {
+    position: absolute;
+    top: 390px;
+    right: 3px;
+}
+
+.animate .b1 {
+    animation: aa 10s infinite linear;
+}
+
+.animate .b2 {
+    animation: rotation2 10s infinite linear;
+}
+
+.animate .b3 {
+    animation: rotation3 10s infinite linear;
+}
+
+.animate .b4 {
+    animation: rotation4 10s infinite linear;
+}
+
+.animate .b5 {
+    animation: rotation5 10s infinite linear;
+}
+
+.animate .b6 {
+    animation: rotation6 10s infinite linear;
+}
+
+
+
+@keyframes color {
+    0% {
+        background-color: black;
+    }
+
+    25% {
+        background-color: #36454F;
+    }
+
+    50% {
+        background-color: #1dbf9c;
+    }
+
+    75% {
+        background-color: #7D98A1;
+    }
+
+    100% {
+        background-color: #1e848a;
+    }
+}
+
+@keyframes color2 {
+    0% {
+        background-color: white;
+    }
+
+    25% {
+        background-color: #36454F;
+    }
+
+    50% {
+        background-color: #1dbf9c;
+    }
+
+    75% {
+        background-color: #7D98A1;
+    }
+
+    100% {
+        background-color: #1e848a;
+    }
+}
+
+@keyframes aa {
+    0% {
+        top: 109px;
+        right: 410px;
+    }
+
+    8.33% {
+        top: 41px;
+        right: 332px;
+    }
+
+    16.67% {
+        top: 1.5px;
+        right: 207px;
+    }
+
+    25% {
+        top: 43.5px;
+        right: 84px;
+    }
+
+    33.33% {
+        top: 109px;
+        right: 3px;
+    }
+
+    41.67% {
+        top: 250px;
+        right: -30px;
+    }
+
+    50% {
+        top: 390px;
+        right: 3px;
+    }
+
+    58.33% {
+        top: 450px;
+        right: 83px;
+    }
+
+    66.67% {
+        top: 498px;
+        right: 207px;
+    }
+
+    75% {
+        top: 450px;
+        right: 339px;
+    }
+
+    83.33% {
+        top: 390px;
+        right: 410px;
+    }
+
+    91.67% {
+        top: 250px;
+        right: 443px;
+    }
+
+    100% {
+        top: 109px;
+        right: 410px;
+    }
+}
+
+@keyframes rotation2 {
+    0% {
+        top: 250px;
+        right: 443px;
+    }
+
+    8.33% {
+        top: 109px;
+        right: 410px;
+
+    }
+
+    16.67% {
+        top: 41px;
+        right: 332px;
+    }
+
+    25% {
+        top: 1.5px;
+        right: 207px;
+    }
+
+    33.33% {
+        top: 43.5px;
+        right: 84px;
+    }
+
+    41.67% {
+        top: 109px;
+        right: 3px;
+    }
+
+    50% {
+        top: 250px;
+        right: -30px;
+    }
+
+    58.33% {
+        top: 390px;
+        right: 3px;
+    }
+
+    66.67% {
+        top: 450px;
+        right: 83px;
+    }
+
+    75% {
+        top: 498px;
+        right: 207px;
+    }
+
+    83.33% {
+        top: 450px;
+        right: 339px;
+    }
+
+    91.67% {
+        top: 390px;
+        right: 410px;
+    }
+
+    100% {
+        top: 250px;
+        right: 443px;
+    }
+}
+
+@keyframes rotation3 {
+    0% {
+        top: 390px;
+        right: 410px;
+    }
+
+    8.33% {
+        top: 250px;
+        right: 443px;
+    }
+
+    16.67% {
+        top: 109px;
+        right: 410px;
+    }
+
+    25% {
+        top: 41px;
+        right: 332px;
+    }
+
+    33.33% {
+        top: 1.5px;
+        right: 207px;
+    }
+
+    41.67% {
+        top: 43.5px;
+        right: 84px;
+    }
+
+    50% {
+        top: 109px;
+        right: 3px;
+    }
+
+    58.33% {
+        top: 250px;
+        right: -30px;
+    }
+
+    66.67% {
+        top: 390px;
+        right: 3px;
+    }
+
+    75% {
+        top: 450px;
+        right: 83px;
+    }
+
+    83.33% {
+        top: 498px;
+        right: 207px;
+    }
+
+    91.67% {
+        top: 450px;
+        right: 339px;
+    }
+
+    100% {
+        top: 390px;
+        right: 410px;
+    }
+}
+
+@keyframes rotation4 {
+    0% {
+        top: 109px;
+        right: 3px;
+    }
+
+    8.33% {
+        top: 250px;
+        right: -30px;
+    }
+
+    16.67% {
+        top: 390px;
+        right: 3px;
+    }
+
+    25% {
+        top: 450px;
+        right: 83px;
+    }
+
+    33.33% {
+        top: 498px;
+        right: 207px;
+    }
+
+    41.67% {
+        top: 450px;
+        right: 339px;
+    }
+
+    50% {
+        top: 390px;
+        right: 410px;
+    }
+
+    58.33% {
+        top: 250px;
+        right: 443px;
+    }
+
+    66.67% {
+        top: 109px;
+        right: 410px;
+    }
+
+    75% {
+        top: 41px;
+        right: 332px;
+    }
+
+    83.33% {
+        top: 1.5px;
+        right: 207px;
+    }
+
+    91.67% {
+        top: 43.5px;
+        right: 84px;
+    }
+
+    100% {
+        top: 109px;
+        right: 3px;
+    }
+}
+
+@keyframes rotation5 {
+    0% {
+        top: 250px;
+        right: -30px;
+    }
+
+    8.33% {
+        top: 390px;
+        right: 3px;
+    }
+
+    16.67% {
+        top: 450px;
+        right: 83px;
+    }
+
+    25% {
+        top: 498px;
+        right: 207px;
+    }
+
+    33.33% {
+        top: 450px;
+        right: 339px;
+    }
+
+    41.67% {
+        top: 390px;
+        right: 410px;
+    }
+
+    50% {
+        top: 250px;
+        right: 443px;
+    }
+
+    58.33% {
+        top: 109px;
+        right: 410px;
+    }
+
+    66.67% {
+        top: 41px;
+        right: 332px;
+    }
+
+    75% {
+        top: 1.5px;
+        right: 207px;
+    }
+
+    83.33% {
+        top: 43.5px;
+        right: 84px;
+    }
+
+    91.67% {
+        top: 109px;
+        right: 3px;
+    }
+
+    100% {
+        top: 250px;
+        right: -30px;
+    }
+}
+
+@keyframes rotation6 {
+    0% {
+        top: 390px;
+        right: 3px;
+    }
+
+    8.33% {
+        top: 450px;
+        right: 83px;
+    }
+
+    16.67% {
+        top: 498px;
+        right: 207px;
+    }
+
+    25% {
+        top: 450px;
+        right: 339px;
+    }
+
+    33.33% {
+        top: 390px;
+        right: 410px;
+    }
+
+    41.67% {
+        top: 250px;
+        right: 443px;
+    }
+
+    50% {
+        top: 109px;
+        right: 410px;
+    }
+
+    58.33% {
+        top: 41px;
+        right: 332px;
+    }
+
+    66.67% {
+        top: 1.5px;
+        right: 207px;
+    }
+
+    75% {
+        top: 43.5px;
+        right: 84px;
+    }
+
+    83.33% {
+        top: 109px;
+        right: 3px;
+    }
+
+    91.67% {
+        top: 250px;
+        right: -30px;
+    }
+
+    100% {
+        top: 390px;
+        right: 3px;
+    }
+}

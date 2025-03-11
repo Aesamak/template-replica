@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="a">
+        <div class="o">
+            <div class="a1">
+                <div class="a2">
+                    <img class="img" src="aaa.png" alt="">
+                </div>
+            </div>
+        </div>
+        <h3 class="b b1">Laptops</h3>
+        <h3 class="b b2">Desktops</h3>
+        <h3 class="b b3">Thin Clients</h3>
+        <h3 class="b b4">Workstations</h3>
+        <h3 class="b b5">Mouse</h3>
+        <h3 class="b b6">KeyBoard</h3>
+    </div>
+    <script>
+        const img = document.querySelector('.img');
+        const parentDiv = document.querySelector('.a');
+        img.addEventListener('mouseover', () => {
+            parentDiv.classList.add('animate');
+        });
+        img.addEventListener('mouseout', () => {
+            parentDiv.classList.remove('animate');
+        });
+    </script>
+</body>
+
+</html>

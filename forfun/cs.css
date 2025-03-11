@@ -1,0 +1,66 @@
+@keyframes aa {
+    0% { a
+        top: 109px;
+        right: 410px;
+    }
+
+    8.33% { b
+        top: 41px;
+        right: 332px;
+    }
+
+    16.67% { c
+        top: 1.5px;
+        right: 207px;
+    }
+
+    25% { d
+        top: 43.5px;
+        right: 84px;
+    }
+
+    33.33% { e
+        top: 109px;
+        right: 3px;
+    }
+
+    41.67% { f
+        top: 250px;
+        right: -30px;
+    }
+
+    50% { g
+        top: 390px;
+        right: 3px;
+    }
+
+    58.33% { h
+        top: 450px;
+        right: 83px;
+    }
+
+    66.67% { i
+        top: 498px;
+        right: 207px;
+    }
+
+    75% { j
+        top: 450px;
+        right: 339px;
+    }
+
+    83.33% { k
+        top: 390px;
+        right: 410px;
+    }
+
+    91.67% {l
+        top: 250px;
+        right: 443px;
+    }
+
+    100% { a
+        top: 109px;
+        right: 410px;
+    }
+}
