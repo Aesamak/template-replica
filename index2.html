@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .a {
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to bottom right, #b7835b 10%, #ffd185);
+            position: relative;
+            overflow: hidden;
+            filter: brightness(100%);
+            z-index: 1;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            width: 100vw;
+            height: 20vh;
+            position: absolute;
+
+            top: 0px;
+            z-index: 100;
+            padding: 0px 10px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 55vw;
+        }
+
+        .img img {
+            width: 150px;
+            filter: brightness(100%);
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .menu .me a {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .ico {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            margin-right: 20px;
+            background-image: linear-gradient(to bottom right, #b7835b, #ffd185);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-image 2s linear;
+        }
+
+        .ico:hover {
+            transition: all 2s linear;
+            background-image: linear-gradient(to top left, #b7835b, #ffd185);
+        }
+
+        .so {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            gap: 74px;
+            height: 56vh;
+            margin-bottom: 30px;
+            margin-left: 5px;
+        }
+
+        .s {
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            transform: rotateZ(-90deg);
+        }
+
+        .fa {
+            margin-top: 10px;
+        }
+
+        .back1 {
+            position: relative;
+            bottom: 283px;
+            left: 130px;
+            width: 107vw;
+            height: 210vh;
+            background-image: linear-gradient(to top left, #103266, #ffd185);
+            /* background-color: #103266de; */
+            border-radius: 100%;
+            filter: brightness(100%);
+            z-index: 2;
+        }
+
+        .aa {
+            position: absolute;
+            left: 63px;
+            top: 420px;
+            width: 350px;
+        }
+
+        .aa .b {
+            display: inline-block;
+            font-size: 14px;
+            padding: 9px 23px;
+            border-radius: 12px;
+            transition: background-image 2s linear;
+            background-image: linear-gradient(to bottom right, #b7835b, #ffd185);
+            margin-bottom: 30px;
+        }
+
+        .b:hover {
+            background-image: linear-gradient(to top left, #b7835b, #ffd185);
+        }
+
+        .h {
+            font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .p {
+            font-weight: 500;
+            color: #393939;
+            margin-bottom: 40px;
+        }
+
+        .arrow {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 170px;
+        }
+
+        .arr {
+            display: flex;
+            align-items: center;
+            border: solid 2px;
+            padding: 6px 7px;
+            border-radius: 50px;
+        }
+
+        .left {
+            background-image: linear-gradient(to right, #b7835b, transparent);
+        }
+
+        .right {
+            background-image: linear-gradient(to left, #b7835b, transparent);
+        }
+
+        .right:hover {
+            background-image: linear-gradient(to right, #b7835b, transparent);
+        }
+
+        .left:hover {
+            background-image: linear-gradient(to left, #b7835b, transparent);
+        }
+
+        .back2 {
+            position: relative;
+            top: 342px;
+            left: 490px;
+            width: 450px;
+            height: 450px;
+            background-color: #b5c269b9;
+            border-radius: 100%;
+            background-image: linear-gradient(to bottom right, #b7835b 10%, #ffd185);
+            z-index: 3;
+            filter: brightness(100%);
+        }
+
+        .back2 h1 {
+            position: relative;
+            top: 51px;
+            left: -4px;
+            color: white;
+            font-size: 116px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .back2 img {
+            width: 367px;
+            height: 600px;
+            position: relative;
+            top: -74px;
+            left: 53px;
+        }
+
+        @media only screen and (max-width:721px) and (max-height:1521px) {
+
+            .header {
+                height: 7vh;
+            }
+
+            .info {
+                width: 64vw;
+                gap: 17px;
+            }
+
+            .img img {
+                width: 100px;
+            }
+
+            .menu {
+                gap: 10px;
+            }
+
+            .menu .me a {
+                font-size: 12px;
+            }
+
+            .ico {
+                padding: 5px;
+                margin-right: 0px;
+            }
+
+            .so {
+                flex-direction: row;
+                left: 80px;
+                top: 130px;
+                gap: 153px;
+                height: 2vh;
+                margin-bottom: 30px;
+                margin-left: 5px;
+            }
+
+            .s {
+                font-size: 20px;
+                font-weight: 600;
+                transform: rotateZ(0deg);
+            }
+
+            .fa {
+                margin-top: 0px;
+            }
+
+            .back1 {
+                top: 237px;
+                left: -394px;
+                width: 210vw;
+                height: 105vh;
+            }
+
+            .aa {
+                left: 577px;
+                top: 99px;
+                width: 350px;
+            }
+
+            .back2 {
+                top: 462px;
+                left: 451px;
+                width: 600px;
+                height: 600px;
+            }
+
+            .back2 h1 {
+                top: 51px;
+                left: 12px;
+                font-size: 148px;
+            }
+
+            .back2 img {
+                width: 427px;
+                height: 660px;
+                top: -100px;
+                left: 92px;
+            }
+
+            .aa .b {
+                font-size: 14px;
+                padding: 18px 32px;
+                border-radius: 12px;
+                margin-bottom: 30px;
+            }
+
+
+            .h {
+                font-size: 40px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+
+            .p {
+                font-weight: 500;
+                margin-bottom: 40px;
+            }
+
+            .arrow {
+                width: 170px;
+            }
+
+            .arr {
+                border: solid 2px;
+                padding: 6px 7px;
+                border-radius: 50px;
+            }
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="a">
+        <div class="header">
+            <div class="info">
+                <div class="img"><img src="logo12.png" alt=""></div>
+                <div class="menu">
+                    <div class="me"><a href="#">Home</a></div>
+                    <div class="me"><a href="#">About</a></div>
+                    <div class="me"><a href="#">Categories</a></div>
+                    <div class="me"><a href="#">Collection</a></div>
+                </div>
+            </div>
+            <div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                    color="#000000" fill="none">
+                    <path
+                        d="M8 16H15.2632C19.7508 16 20.4333 13.1808 21.261 9.06904C21.4998 7.88308 21.6192 7.2901 21.3321 6.89503C21.1034 6.58036 20.7077 6.51633 20 6.5033"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M9 6.5H17M13 10.5V2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M8 16L5.37873 3.51493C5.15615 2.62459 4.35618 2 3.43845 2H2.5" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M8.88 16H8.46857C7.10522 16 6 17.1513 6 18.5714C6 18.8081 6.1842 19 6.41143 19H17.5"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="10.5" cy="20.5" r="1.5" stroke="currentColor" stroke-width="1.5" />
+                    <circle cx="17.5" cy="20.5" r="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg></div>
+        </div>
+        <div class="so">
+            <div class="s">Twitter</div>
+            <div class="s">Instagram</div>
+            <div class="s fa">Facebook</div>
+        </div>
+        <div class="back1">
+            <div class="aa">
+                <div class="b">2024 Collection</div>
+                <div class="h">
+                    <p>You should always feel pretty</p>
+                </div>
+                <div class="p">
+                    <p>Clothes that are sure to heat up your winter</p>
+                </div>
+                <div class="arrow">
+                    <div class="left arr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24" color="#000000" fill="none">
+                            <path d="M3.99982 11.9998L19.9998 11.9998" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M8.99963 17C8.99963 17 3.99968 13.3176 3.99966 12C3.99965 10.6824 8.99966 7 8.99966 7"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></div>
+                    <div class="right arr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24" color="#000000" fill="none">
+                            <path d="M20.0001 11.9998L4.00012 11.9998" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M15.0003 17C15.0003 17 20.0002 13.3176 20.0002 12C20.0002 10.6824 15.0002 7 15.0002 7"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></div>
+                </div>
+
+            </div>
+            <div class="back2">
+                <h1>WINTER</h1>
+                <img src="boy.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
